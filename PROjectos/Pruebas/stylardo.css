@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    height: 800px;
+    background-image: linear-gradient(0, #2b3433 0, #272b2a 25%, #212121 50%, #1b1719 75%, #160d10 100%);
+
+}
+
+header{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(136,1,1,1) 33%, rgba(101,1,1,1) 68%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+
+}
+
+.menu{
+    width: 900px;
+    margin: 0;
+}
+
+h1 {
+    float: left;
+    padding: 15px;
+    margin-top: 4px;
+    /* color: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(136,1,1,1) 33%, rgba(101,1,1,1) 68%, rgba(0,0,0,1) 100%); */
+    color: black;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 70px;
+    padding: 30px 0px;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #acabab;
+    font-weight: bold;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: white;    
+}
+
+.carrusel {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(200px, 40px); */
+}
+
+.carrusel img{
+    width: 70px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.carrusel img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* .imagen1::before{
+    content: 'Barbie Movie';
+    position: absolute;
+    color: greenyellow;
+} */
+
+footer{
+    width: 100%;
+    margin-top: 140px;
+    padding: 1rem 0;
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,187,187,1) 55%, rgba(97,97,97,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+footer p{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+footer a{
+    padding: 15px;
+}

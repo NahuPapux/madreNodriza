@@ -1,0 +1,54 @@
+nav{
+    background: url(../images/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg) center center no-repeat;
+    background-size: cover;
+    justify-content: center !important;
+}
+img{
+    margin: 15px;
+}
+h3{
+    margin: 15px;
+}
+
+.parrafo1 img{
+    float: left;
+}
+.parrafo2 img{
+    float: right;
+}
+.parrafo3 img{
+    float: left;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background: url(https://thumbs.dreamstime.com/b/fondo-soleado-con-las-palmeras-vector-53546971.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+}
+input[type="checkbox"]::before{
+    content:"";
+    background-color: gold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="checkbox"]:checked{
+    background: url(https://img.freepik.com/premium-vector/beautiful-natural-night-landscape-background_79591-87.jpg) center no-repeat;
+    background-size: cover;
+}
+input[type="checkbox"]:checked::before{
+    transform: translate(100%);
+    background-color: darkblue;
+}
+.dark-mode{
+    color: white;
+    background: url(../images/OCEANO-PROFUNDO.jpg) no-repeat;
+    background-size: cover;
+}
