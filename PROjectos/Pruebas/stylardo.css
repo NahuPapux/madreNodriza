@@ -63,9 +63,7 @@ nav ul li a{
     display: flex;
     width: 600px;
     height: 430px;
-    justify-content: center;
-    align-items: center;
-    /* transform: translate(200px, 40px); */
+    transform: translate(200px, 40px);
 }
 
 .carrusel img{
