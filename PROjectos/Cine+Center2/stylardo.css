@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,8 +9,9 @@ body{
     align-items: center;
     justify-content: center; */
     height: 800px;
-    background-image: linear-gradient(0, #2b3433 0, #272b2a 25%, #212121 50%, #1b1719 75%, #160d10 100%);
-
+    background-image: linear-gradient(0, #262d2c 0, #222524 25%, #212121 50%, #1b1719 75%, #160d10 100%);
+    /* font-family: 'Quicksand', sans-serif; */
+    line-height: 1.6;
 }
 
 header{
@@ -60,8 +62,13 @@ nav ul li a{
 .titulo{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 40px;
     color: white;    
+    font-size: 2em;
+}
+
+.titulo span{
+    color: red;
 }
 
 .carrusel {
@@ -131,11 +138,104 @@ h3{
 
 .titulox{
     padding-top: 15px;
-
     color: white;
+    text-align: center;
 }
 h5{
     transform: translate(-550px, 150px);
     color: #acabab;
     width: 50%;
+}
+
+.contenido{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.contacto > *{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    padding: 1em;
+}
+
+.contacto-formulario{
+    background: #191919;
+}
+
+.contacto-info{
+    background: #000;
+}
+
+.contacto-formulario form{
+    margin: 0;
+    padding: 1em;
+}
+
+.contacto-formulario form button,
+.contacto-formulario form input,
+.contacto-formulario form textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+}
+
+/* Modificación para 22/04/2023 (Agrego buscador de peliculas) */
+
+.buscador {
+	position: absolute;
+    right: 5%;
+	top: 22%;
+	transform: translate(-7%,-7%);
+	padding: 10px;
+}
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: #000;
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #D50000;
+	transition: all .7s ease;
+}
+
+::placeholder {
+	color: grey;
+}
+
+.btn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: rgba(136,1,1,1);
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn .icon-search {
+	font-size: 20px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.buscador:hover input {
+	width: 350px;
+}
+
+.buscador:hover .icon-search{
+	transform: rotate(-360deg);
+}
+
+.btn:hover{
+	background: #cc0000;
 }
